@@ -12,49 +12,32 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Marketplace</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="backoffice.html">Back Office</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <div class="container my-5">
   <div class="card mx-auto" style="max-width: 600px;">
-    <div class="p-3 bg-primary text-white text-center">
+    <div class="p-3 bg-dark text-white text-center">
       <h4 class="mb-0">Aggiungi Prodotto</h4>
     </div>
     <div class="m-5">
@@ -80,7 +63,7 @@
           <input type="number" class="form-control" id="prezzo">
         </div>
         <div class="text-end">
-          <button type="button" onclick="saveProduct()" class="btn btn-primary">
+          <button type="button" onclick="saveProduct()" class="btn btn-dark">
              Salva
           </button>
       </div>
@@ -92,11 +75,11 @@
   <table class="table m-5 border">
       <thead>
         <tr class=>
-          <th scope="col" class="bg-primary text-white">Nome</th>
-          <th scope="col" class="bg-primary text-white">Foto</th>
-          <th scope="col" class="bg-primary text-white">Brand</th>
-          <th scope="col" class="bg-primary text-white">Prezzo</th>
-          <th scope="col" class="bg-primary text-white">Azioni</th>
+          <th scope="col" class="bg-dark text-white">Nome</th>
+          <th scope="col" class="bg-dark text-white">Foto</th>
+          <th scope="col" class="bg-dark text-white">Brand</th>
+          <th scope="col" class="bg-dark text-white">Prezzo</th>
+          <th scope="col" class="bg-dark text-white">Azioni</th>
         </tr>
       </thead>
       <tbody id="tabella">
